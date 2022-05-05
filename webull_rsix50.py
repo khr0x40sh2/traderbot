@@ -7,8 +7,8 @@ import datetime
 
 import config	#config.py should house login credentials if needed
 from db import mysqlConn
-from slack import WebClient
-from slackBot import SlackBot #slack notification plugin
+#from slack import WebClient
+#from slackBot import SlackBot #slack notification plugin
 from config import *
 
 
@@ -83,8 +83,8 @@ def insertintoDB_exit(price, option_id, reason):
         print("[!] There was an error inserting sold option\n{}".format(e))
         return False
 
-def slackCallout(slackC, message):
-    slackC.send_response(message, slackC.channel)
+#def slackCallout(slackC, message):
+#    slackC.send_response(message, slackC.channel)
 
 def isTradingDay(currenthour):
     if currenthour > 9 and currenthour < 16:
