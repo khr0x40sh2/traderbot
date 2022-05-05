@@ -1,0 +1,5 @@
+webull
+bta-lib
+mysql-connector-python
+slackclient-cli
+pandas
