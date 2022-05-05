@@ -267,9 +267,9 @@ if __name__ == '__main__':
     wb.get_trade_token(config.trade_pin)
 
     #Slack stuff, uncomment and configure for slack notifications
-    #SLACK_TOKEN="<insert slack token here>"
+    #SLACK_TOKEN = SlackBot.SLACK_TOKEN
     #slackC = WebClient(token=SLACK_TOKEN)
-    #slack_bot = SlackBot("<insert channel here>")
+    #slack_bot = SlackBot(SlackBot.SLACK_CHANNEL)
 
     #Database stuff
     try:
